@@ -1,0 +1,63 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Start",
+            "detail": "Start the application in interactive mode.",
+            "type": "shell",
+            "command": "py ./app.py",
+            "problemMatcher": []
+        },
+        {
+            "label": "Run",
+            "detail": "Quickly process all files in the input folder.",
+            "type": "shell",
+            "command": "py ./app.py -i ./input/*.png -o ./output -s 48 -c 8b8b8b --k --overwrite",
+            "problemMatcher": []
+        },
+        {
+            "label": "Clean",
+            "detail": "Clean the input and output folder.",
+            "type": "shell",
+            "command": "rm -r ./input/*;rm -r ./output/*",
+            "problemMatcher": []
+        },
+        {
+            "label": "Clean Input",
+            "detail": "Clean the input folder.",
+            "type": "shell",
+            "command": "rm -r ./input/*",
+            "problemMatcher": []
+        },
+        {
+            "label": "Clean Output",
+            "detail": "Clean the output folder.",
+            "type": "shell",
+            "command": "rm -r ./output/*",
+            "problemMatcher": []
+        },
+        {
+            "label": "Open Input Folder",
+            "detail": "Open the input folder.",
+            "type": "shell",
+            "command": "ii ./input",
+            "problemMatcher": []
+        },
+        {
+            "label": "Open Output Folder",
+            "detail": "Open the output folder.",
+            "type": "shell",
+            "command": "ii ./output",
+            "problemMatcher": []
+        },
+        {
+            "label": "Install Python Depenencies",
+            "detail": "Install the python dependencies (requirements.txt)",
+            "type": "shell",
+            "command": "pip install -r requirements.txt",
+            "problemMatcher": []
+        }
+    ]
+}

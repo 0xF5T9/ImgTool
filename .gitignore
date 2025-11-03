@@ -20,7 +20,6 @@ clean/
 test_images/
 
 # IDE
-.vscode/
 .idea/
 *.swp
 *.swo
